@@ -28,4 +28,10 @@ state of the art的算法错误率在5%左右，但是要么没有源代码，�
 
 - Deep learning for sentiment analysis of movie reviews，也是Stanford的，没细看
 
-还有一些综述性的博客：https://blog.paralleldots.com/data-science/breakthrough-research-papers-and-models-for-sentiment-analysis/ 等等
+还有一些综述性的博客：
+
+https://blog.paralleldots.com/data-science/breakthrough-research-papers-and-models-for-sentiment-analysis/
+
+http://nlpprogress.com/english/sentiment_analysis.html
+
+等等
