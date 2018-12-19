@@ -14,13 +14,13 @@
 
 state of the art的算法错误率在5%左右，但是要么没有源代码，要么难以复现。而且只有比较少的论文利用上了unsup数据。比如：
 
-- Universal Language Model Fine-tuning for Text Classification，18年，错误率只有4.6%(https://github.com/fastai/fastai/tree/master/courses/dl2/imdb_scripts) (还没尝试复现
+- Universal Language Model Fine-tuning for Text Classification，18年，错误率只有4.6%(https://github.com/fastai/fastai/tree/master/courses/dl2/imdb_scripts 代码维护得很差。没有GPU的话，单pre-train的一个epoch就需要十多个小时，放弃)
 
-- Adversarial Training Methods for Semi-Supervised Text Classification，17年，提出了Adversarial模型，半监督，用上了unsup数据，提供了用TF写的源代码以及参数，试了一下但是难以训练(https://github.com/tensorflow/models/tree/master/research/adversarial_text)
+- Adversarial Training Methods for Semi-Supervised Text Classification，17年，提出了Adversarial模型，半监督，用上了unsup数据，提供了用TF写的源代码以及参数(https://github.com/tensorflow/models/tree/master/research/adversarial_text 试了一下发现pre-train需要100k个epochs，放弃)
 
 - Supervised and semi-supervisedtext categorization using LSTM for regionembeddings，16年，作者发了一系列论文，提出了ConText模型，不过代码是用C++和CUDA写的(https://github.com/riejohnson/ConText)
 
-- Learned in Translation: Contextualized Word Vectors，17年，提出了CoVe模型(https://github.com/salesforce/cove) (还没尝试复现
+- Learned in Translation: Contextualized Word Vectors，17年，提出了CoVe模型(https://github.com/salesforce/cove)
 
 - Distributed Representations of Sentences and Documents，14年，作者是Mikolov，也是Word2vec的作者，这里提出了Doc2vec做句子嵌入，提供了C++代码，论文里说错误率在7.4%。还有论文说用两层MLP做分类器可以把准确率提高到94.5%。不过别人用python的gensim包复现时发现不管怎么优化，准确率最多90%左右(https://github.com/RaRe-Technologies/gensim/blob/develop/docs/notebooks/doc2vec-IMDB.ipynb)
 
